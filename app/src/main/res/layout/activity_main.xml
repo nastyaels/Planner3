@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    android:background="@drawable/fl"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Planner"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="18sp" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="Enter task"
+            android:textColorHint="@android:color/holo_purple"
+            android:inputType="textMultiLine"
+             />
+
+        <Button
+            android:id="@+id/add_task"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:background="@color/colorAccent"
+            android:layout_width="0dp"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="85dp"
+        android:paddingBottom="85dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnGoCalendar"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Go To Calendar"
+            android:layout_gravity="center_vertical"/>
+
+         <Button
+             android:id="@+id/btnGoPlant"
+             android:layout_width="145dp"
+             style="?android:attr/buttonStyleSmall"
+             android:layout_height="wrap_content"
+             android:background="@color/colorAccent"
+             android:text="Go To Plant"
+             android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
